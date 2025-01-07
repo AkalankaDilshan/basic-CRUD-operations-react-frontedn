@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Student } from "../types/Student";
 
-const API_URL = "http://localhost:8080/api/student";
+const API_URL = "http://localhost:8989/api/student";
 
 export const getAllStudents = async () => {
      const response = await axios.post(`${API_URL}/get`);
