@@ -1,7 +1,8 @@
 import axios from "axios";
 import { Student } from "../types/Student";
 
-const API_URL = `${process.env.BASE_URL}`;;
+// const API_URL = `${process.env.BASE_URL}`;
+const API_URL = "http://localhost:8081/api/student";
 
 export const getAllStudents = async () => {
      const response = await axios.post(`${API_URL}/get`);
